@@ -1,1 +1,43 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: rgb(144, 221, 144);
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 20px;
+
+  height: 450px;
+  width: 300px;
+  background-color: white;
+  border-radius: 5px;
+  border-color: rgb(185, 184, 184);
+  border-style: outset;
+}
+
+.header-card {
+  padding-top: 0px;
+  padding-left: 10px;
+  display: flex;
+}
+
+.container-card {
+  font-size: 72px;
+}
+#bottom-suite {
+  padding-bottom: 2px;
+  padding-left: 5px;
+
+  display: flex;
+  /* justify-content: end;*/
+  align-items: end;
+  transform: rotate(180deg);
+}
+
+#suite,
+#bottom-suite {
+  font-size: 50px;
+}
