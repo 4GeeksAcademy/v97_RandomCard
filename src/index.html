@@ -3,27 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
+    <title>Random Card</title>
+
     <link rel="shortcut icon" href="./4geeks.ico" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <div class="header ">
+        <div class="d-flex flex-row  mb-3 mt-3 d-grid gap-1">
+          <button type="button" id="newCard" class="p-2 btn btn-light border-0">
+            New Card
+          </button>
+          <button type="button" id="timer" class="p-2 btn btn-light border-0">
+            Generate 1s
+          </button>
+          <button
+            type="button"
+            id="stopTimer"
+            class="p-2 btn btn-light border-0"
+          >
+            Stop Generate
+          </button>
+          <button
+            id="zoomPlus"
+            type="button"
+            class="p-2 btn btn-light border-0"
+          >
+            Zoom +
+          </button>
+          <button
+            id="zoomLess"
+            type="button"
+            class="p-2 btn btn-light border-0"
+          >
+            Zoom -
+          </button>
+        </div>
+      </div>
+      <div id="card" class="card">
+        <div class="header-card">
+          <p id="suite"></p>
+        </div>
+        <div class="container-card">
+          <p id="number"></p>
+        </div>
+        <div id="bottom-suite" class="bottom-card">
+          <p id="suite"></p>
+        </div>
       </div>
     </div>
+    <script src="scr/app.js"></script>
   </body>
 </html>
